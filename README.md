@@ -1,2 +1,2 @@
 # blenderfolio
-a website for my blender portfolio
+Building a web portfolio for my 3D Projects.
