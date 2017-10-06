@@ -10,6 +10,17 @@ border: 0px;
   color: white;
   text-align: center;
   /*padding: 16px;*/
+  font-family: 'pacifico', cursive;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #333;
+  /*border: 1px dotted #fff;*/
+  color: white;
+  /*text-align: center;*/
+  /*padding: 16px;*/
+  font-family: 'Dancing Script', cursive;
 }
 
 .navigation {
@@ -26,6 +37,7 @@ border: 0px;
 
 .mainbody {
   /*border: 1px dotted black;*/
+  font-family: 'Dancing Script', cursive;
 }
 
 .footer {
@@ -82,22 +94,58 @@ li a:hover {
 /*container to hold the content on the right side*/
 
 .mainContent {
+  position: relative;
   width: 90%;
-  height: auto;
+  /*height: auto;*/
 }
 
 /*Paragraph tile*/
 .pTitle {
   color: grey;
-
+  font-family: 'Dancing Script', cursive;
 }
 
 /*size for main image content*/
 .mContImage {
-  width: 660x;
-  height: 371px;
+  /*width: 660x;
+  height: 371px;*/
+
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
 }
 
+.imageOverlay {
+  /*position: absolute;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  background: grey;
+  opacity: .5;
+  transition: .5s ease;
+}
+
+.mainContent:hover .imageOverlay {
+  height: 5%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: center;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+  /*-ms-transform: translate(-50%, -50%);*/
+}
 
 .mainBody {
   background-color: #333;
